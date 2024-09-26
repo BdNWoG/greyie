@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greyed Out Calendar</title>
+</head>
+<body>
+    <h1>Greyed-Out Calendar</h1>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.start }} - {{ event.end }} : {{ event.summary }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
